@@ -1,0 +1,38 @@
+# Balance of Maximizing Utility
+
+Thoughts from http://www.henrygeorge.org/def2.htm
+
+you would think that the economy would find some sort of balance
+in which 4 essential things are divided equally among 100 people
+with 25 people each assigned to production. 1 person is able to
+produce enough of that thing to meet the needs of themself and
+3 other people.
+
+	25 people produce 100 units of A
+	25 people produce 100 units of B
+	25 people produce 100 units of C
+	25 people produce 100 units of D
+
+here, everyone has their needs met and earns a living producing
+their respective items. This "ideal" is far from how the real
+world operates, however. What if the production of one item
+becomes more efficient such that only 20 people are needed to
+produce 100 units? What is done with the extra surplus of 25
+items? Or what would these extra 5 people do? There must be
+*something* else that people want beyond the original set of 4
+items? If the production of that item doesn't change, what
+happens if there is population growth?
+
+Perhaps the original assumption is wrong - people will not
+be satisfied with only 1 unit of each item, they will want
+ever more to satisfy their unlimited desires (as long as
+they still have time to appreciate them).
+
+People will always try to maximize their subjective utility, each
+person having unique relative preferences for different items. They
+are only limited by time and space constraints - so they would of
+course prefer to work as little as possible at higher-paying jobs
+to have more time and money to purchase and do more things.
+
+> People seek to satisfy their desires with the least exertion
+- Henry George

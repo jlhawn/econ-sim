@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Economics & Land Use Simulation</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", "Arial", sans-serif;
+        }
+        canvas {
+            position: absolute;
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script type="application/javascript" src="simplex-noise.js"></script>
+    <script type="application/javascript" src="quad-tree.js"></script>
+    <script type="application/javascript" src="sim.js"></script>
+    <script type="application/javascript">
+        document.addEventListener("readystatechange", (event) => {
+            if (document.readyState !== "complete") {
+                return;
+            }
+
+            var canvas = document.getElementById("sim_area");
+            var sim = new Simulation(canvas);
+            sim.run(); 
+        });
+    </script>
+</head>
+<body><canvas id="sim_area">Simulation Area</canvas></body>
+</html>

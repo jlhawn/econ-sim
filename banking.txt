@@ -1,0 +1,46 @@
+banking
+
+There will be a single central bank responsible for managing demand deposit
+accounts and loans for all persons. The bank's reserves start equal to the
+sum of all deposits, perfectly balancing assets and liabilities. The reserves
+to deposits ratio is 1.
+
+        Assets | Liabilities
+    ===========|=============
+    --Reserves-|-Deposits----
+     1,000,000 | 1,000,000
+
+    Reserves/Deposits Ratio: 1.0
+
+When the bank issues a loan, a new leveraged asset representing the loan balance
+is created on the bank's balance sheet. At the same time, the loan balance is
+added to the borrower's account on the liabilities side of the balance sheet.
+The total deposits in the bank have now increased by the loan amount but the
+banks's reserves have not changed. This reduces the bank's reserves ratio to 0.99.
+
+        Assets | Liabilities
+    ===========|=============
+    -----Loans-|-Deposits----
+        10,000 | 1,010,000
+    --Reserves-|
+     1,000,000 |
+
+    Reserves/Deposits Ratio: 0.9900990099
+
+When the borrower pays back the loan with a payment of $10,500 this payment is
+divided into principle and interest. Of this payment, $500 goes to interest while
+the remaining $10,000 goes to pay off the loan balance. The $500 of interest is
+seen on the central bank's balance sheet as profit.
+
+        Assets | Liabilities
+    ===========|=============
+    -----Loans-|-Deposits----
+             0 | 999,500
+    --Reserves-|-Profits-----
+     1,000,000 | 500
+
+    Reserves/Deposits Ratio: 1.0005002501
+
+These profits may be distributed back to deposit holders proportionally as a
+dividend or may simply be transferred to the bank's reserves, serving to increase
+its reserves to deposits ratio, allowing it to make even more loans.

@@ -1,0 +1,21 @@
+ownership & subdivision
+
+Every hex tile is about 1000 square meters, ~10,000 sqft, or ~0.25 acre. An
+entire grid with a radius of 128 hex tiles is ~50 square kilometers.
+
+A separate piece of owned property is termed a "parcel". A parcel is contained
+on a "lot". There may be many parcels to a lot but there is at least one. A lot
+corresponds to actual grid area. A lot is composed of at least one hex tile but
+may be composed of multiple neighboring hex tiles. A lot is never composed of
+partial hex tiles, only multiples of whole tiles. If a lot is composed of more
+than one hex tile, one tile is designated as its "frontage" tile. The frontage
+for a lot of a single tile is that single tile. The frontage tile is used for
+measuring distance to other lots and so can be thought of as the entrance and
+exit of a lot.
+
+A lot is also how we account for buildings and developments. A lot may only
+contain a single building/development. A lot with multiple parcels will only be
+common for high-density commercial or residential lots which may have multiple
+units of housing or commercial space. Industrial lots only have one building.
+
+

@@ -1,0 +1,48 @@
+1 + 6 + 12 + 18 + 24 + 30
+1 + 6*1 + 6*2 + 6*3 + 6*4 + 6*5
+
+1 + 6*(1+2+3+4+5) 
+
+sum from 1 to N = n(n+1)/2
+
+number of cells in a hex grid with radius R? 
+
+	-> 1 + 3(R(R+1))
+
+	R = 128 -> 49,537
+
+
+
+hex coordinates (r, g, b) to (x, y):
+
+where s = length of one side of hexagon
+
+having the distance from the center of one hex to the center of a neighboring
+hex be normalized to 1, s becomes:
+
+	√3 * s = 1 .... s = 1/√3 .... s = √3/3
+
+y depends only on b:
+
+	y = b * 3/2 * √3/3 .... y = b * √3/2
+
+x depends on either r or g:
+
+	x = √3 * √3/3 * (b/2 + r) .... x = b/2 + r
+
+		or
+
+	x = -(b/2 + g)
+
+
+drawing edges of a hexagon centered at (x, y):
+
+vertices at:
+	(x, y + s)				(x, y + √3/3)
+	(x + s*√3/2, y + s/2)	(x + 1/2, y + √3/6)
+							(x + 1/2, y - √3/6)
+							(x, y - √3/3)
+							(x - 1/2, y - √3/6)
+							(x - 1/2, y + √3/6)
+
+

@@ -1,0 +1,23 @@
+render the area at 1024 by 1024 px chunks, each
+to their own canvas element. Each chunk is rendered individually to
+a buffer image which is used on the display canvas. The display
+canvas will only draw chunks which are in the view of the window. Buffered
+images are rendered lazily, i.e., if an object in a chunk changes, that
+chunk will not be rendered until it is within range of the view of the
+window. This separates the processing of the data model with the rendering
+of those objects into the window.
+
+How to find the hexes within a chunk?
+
+Put all of the hexes into a quad-tree, then query the quadtree for all objects
+within the rectangle formed by the chunk with a buffer all the way around the
+rectangle in order to include hexes which are not centered in the rectangle
+but which may extend into the chunk. The buffers on left and right should
+therefore be half the width of one hex while the buffers on the top and bottom
+should be one side length.
+
+When it is determined that a chunk will be in the view of the window, a buffered
+rendering of the chunk (if one exists which is not stale) should be drawn onto
+the main window canvas. If a buffered rendering does not exist or contains stale
+rendered data, a temporary texture should be used instead while the chunk is
+rendered to be drawn for the next frame.
